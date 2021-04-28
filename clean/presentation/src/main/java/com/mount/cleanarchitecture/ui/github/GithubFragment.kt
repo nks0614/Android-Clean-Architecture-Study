@@ -1,4 +1,4 @@
-package com.mount.cleanarchitecture.ui
+package com.mount.cleanarchitecture.ui.github
 
 import android.os.Bundle
 import android.view.View

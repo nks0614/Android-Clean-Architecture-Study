@@ -1,4 +1,4 @@
-package com.mount.cleanarchitecture.ui
+package com.mount.cleanarchitecture.ui.main
 
 import android.os.Bundle
 import com.google.android.material.tabs.TabLayout
@@ -7,6 +7,8 @@ import com.mount.cleanarchitecture.R
 import com.mount.cleanarchitecture.base.BindingActivity
 import com.mount.cleanarchitecture.base.ViewPagerAdapter
 import com.mount.cleanarchitecture.databinding.ActivityMainBinding
+import com.mount.cleanarchitecture.ui.bookmark.BookmarkFragment
+import com.mount.cleanarchitecture.ui.github.GithubFragment
 
 
 class MainActivity : BindingActivity<ActivityMainBinding>() {

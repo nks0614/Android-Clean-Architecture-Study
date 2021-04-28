@@ -8,7 +8,7 @@
 
         <variable
             name="viewModel"
-            type="com.mount.cleanarchitecture.ui.BookmarkViewModel" />
+            type="com.mount.cleanarchitecture.ui.bookmark.BookmarkViewModel" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout

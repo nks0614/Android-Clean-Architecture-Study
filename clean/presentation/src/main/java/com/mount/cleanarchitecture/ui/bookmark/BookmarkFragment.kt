@@ -1,4 +1,4 @@
-package com.mount.cleanarchitecture.ui
+package com.mount.cleanarchitecture.ui.bookmark
 
 import android.os.Bundle
 import android.view.View
