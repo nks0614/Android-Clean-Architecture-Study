@@ -18,6 +18,6 @@ class UserRepositoryImpl(
     }
 
     override fun addBookmarkUser(user: User): Completable {
-        return dataSource.selectBookmarkUser(user)
+        return dataSource.addBookmarkUser(user)
     }
 }

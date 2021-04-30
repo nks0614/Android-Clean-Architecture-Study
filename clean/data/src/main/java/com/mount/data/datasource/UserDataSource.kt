@@ -32,7 +32,7 @@ class UserDataSource(
             userEntityList.map { it.toModel() }
         }
 
-    fun selectBookmarkUser(user : User) : Completable =
+    fun addBookmarkUser(user : User) : Completable =
         if(!user.isBookmark) cache.insertUser(user.toEntity())
         else cache.deleteUser(user.toEntity())
 
