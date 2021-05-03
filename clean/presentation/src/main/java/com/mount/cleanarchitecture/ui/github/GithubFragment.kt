@@ -2,9 +2,11 @@ package com.mount.cleanarchitecture.ui.github
 
 import android.os.Bundle
 import android.view.View
+import android.widget.Toast
 import com.mount.cleanarchitecture.BR
 import com.mount.cleanarchitecture.R
 import com.mount.cleanarchitecture.base.BindingFragment
+import com.mount.cleanarchitecture.base.EventObserver
 import com.mount.cleanarchitecture.databinding.FragmentGithubBinding
 import org.koin.androidx.viewmodel.ext.android.getViewModel
 
@@ -24,10 +26,15 @@ class GithubFragment : BindingFragment<FragmentGithubBinding>() {
 
     override fun onResume() {
         super.onResume()
-
+        viewModel.getAllSearchUser(viewModel.userName.value!!)
     }
 
     override fun observeEvent() {
+        with(viewModel) {
+            onErrorEvent.observe(this@GithubFragment, EventObserver {
+                Toast.makeText(context, it, Toast.LENGTH_SHORT).show()
+            })
+        }
     }
 
 }

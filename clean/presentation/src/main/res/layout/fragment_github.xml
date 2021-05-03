@@ -69,10 +69,10 @@
             <androidx.recyclerview.widget.RecyclerView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:visibility="@{viewModel.inputName.isEmpty() ? View.GONE : View.VISIBLE}"
+                android:visibility="@{viewModel.inputText.isEmpty() ? View.GONE : View.VISIBLE}"
                 android:scrollbars="none"
                 android:overScrollMode="never"
-                app:recyclerItems="@{viewModel.userItemList}" />
+                app:recyclerItems="@{viewModel.userList}" />
 
             <TextView
                 android:layout_width="match_parent"
