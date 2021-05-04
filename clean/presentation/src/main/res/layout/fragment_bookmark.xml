@@ -48,7 +48,7 @@
                     <com.google.android.material.textfield.TextInputEditText
                         android:backgroundTint="@color/white"
                         android:hint="@string/search_user"
-                        android:text="@={viewModel.inputName}"
+                        android:text="@={viewModel.inputText}"
                         android:singleLine="true"
                         android:inputType="textPersonName"
                         android:layout_width="match_parent"
@@ -69,15 +69,15 @@
             <androidx.recyclerview.widget.RecyclerView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:visibility="@{viewModel.userItemList.size() == 0 ? View.GONE : View.VISIBLE}"
+                android:visibility="@{viewModel.userList.size() == 0 ? View.GONE : View.VISIBLE}"
                 android:scrollbars="none"
                 android:overScrollMode="never"
-                app:recyclerItems="@{viewModel.userItemList}" />
+                app:recyclerItems="@{viewModel.userList}" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:visibility="@{viewModel.userItemList.size() == 0 ? View.VISIBLE : View.GONE}"
+                android:visibility="@{viewModel.userList.size() == 0 ? View.VISIBLE : View.GONE}"
                 android:textColor="@color/black"
                 android:textSize="20sp"
                 android:gravity="center"

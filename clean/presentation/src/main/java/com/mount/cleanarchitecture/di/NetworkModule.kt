@@ -24,7 +24,7 @@ val networkModule = module {
 
         OkHttpClient.Builder().addInterceptor(interceptor)
             .readTimeout(20, TimeUnit.SECONDS)
-            .writeTimeout(20, TimeUnit.SECONDS)
+            .writeTimeout(20, TimeUnit.SECONDS).build()
     }
 
     single {
