@@ -7,5 +7,5 @@ import io.reactivex.Single
 interface UserRepository {
     fun getAllSearchUser(name : String) : Single<List<User>>
     fun getAllBookmarkUser(name : String) : Single<List<User>>
-    fun addBookmarkUser(user : User) : Completable // 비동기 처리
+    fun addBookmarkUser(user : User) : Completable
 }
